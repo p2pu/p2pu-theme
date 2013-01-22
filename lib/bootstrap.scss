@@ -8,9 +8,15 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+// Override sass variables with p2pu styles
+@import "p2pu-override-variables";
+
 // Core variables and mixins
 @import "variables"; // Modify this for custom colors, font-sizes, etc
 @import "mixins";
+
+// Import p2pu mixins
+@import "p2pu-mixins";
 
 // CSS Reset
 @import "reset";
@@ -61,3 +67,6 @@
 
 // Utility classes
 @import "utilities"; // Has to be last to override when necessary
+
+// Override certain classes with p2pu styles
+@import "p2pu-override-classes";
