@@ -5760,8 +5760,17 @@ a.label:hover, a.badge:hover {
 }
 
 .well {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
   border-bottom: 2px solid #cccccc;
+}
+
+.alert a {
+  border-bottom: 1px dashed;
+}
+
+.alert-info a {
+  color: #11FF11;
+}
+
+label {
+  font-family: "arvo", Helvetica, sans-serif;
 }
