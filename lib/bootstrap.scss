@@ -9,14 +9,14 @@
  */
 
 // Override sass variables with p2pu styles
-@import "p2pu-override-variables";
+@import "../p2pu/p2pu-override-variables";
 
 // Core variables and mixins
 @import "variables"; // Modify this for custom colors, font-sizes, etc
 @import "mixins";
 
 // Import p2pu mixins
-@import "p2pu-mixins";
+@import "../p2pu/p2pu-mixins";
 
 // CSS Reset
 @import "reset";
@@ -69,4 +69,4 @@
 @import "utilities"; // Has to be last to override when necessary
 
 // Override certain classes with p2pu styles
-@import "p2pu-override-classes";
+@import "../p2pu/p2pu-override-classes";
