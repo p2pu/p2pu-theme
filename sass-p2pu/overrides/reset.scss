@@ -1,0 +1,30 @@
+body{
+  background-color: $bodyBackground;
+  padding-top: 60px;
+  color: $slate;
+}
+
+body,
+input,
+select,
+textarea,
+button,
+dl,
+dt,
+dd,
+label{
+  font-family: $altFontFamily;
+}
+
+h1, h2, h3, h4{
+  font-family: $baseFontFamily;
+  font-weight: normal;
+}
+
+a{
+  color: $cyan;
+  &:hover{
+    text-decoration: none;
+    color: $clemintine;
+  }
+}
