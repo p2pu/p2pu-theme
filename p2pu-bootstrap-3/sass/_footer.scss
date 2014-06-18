@@ -1,0 +1,41 @@
+.p2pu-footer {
+
+	background-color: $gray-dark;
+	color: $gray-snow;
+	padding: 1.5em 0 2em 0;
+	margin-top: 60px;
+
+	a{
+		color: $p2pu-blue;
+		border-bottom: 1px dotted;
+		text-decoration: none;
+		transition: all 0.3s linear;
+
+		&:hover, &:focus {
+			border-bottom: none;
+			text-decoration: none;
+		}
+	}
+
+}
+
+.footer-social {
+	ul{
+		list-style-type: none;
+	}
+
+	a{
+		font-size: 2em;
+		border-bottom: none;
+
+		&:hover {
+			color: $p2pu-orange;
+		}
+	}
+}
+
+.cc-by-sa {
+	img{
+		margin: 1em 0;
+	}
+}
