@@ -93,36 +93,27 @@ $navbar-light: $gray-snow;
 
 	}
 
-	.social-icons-wrap {
+	.donate-btn-wrap {
 		float: right;
-		line-height: 5.5;
-		$icon-size: 2.5em;
+		line-height: 4.5;
+		padding: 0.4em 0;
 
 		a {
-
-			width: $icon-size;
-			height: $icon-size;
-			line-height: $icon-size;
-			text-align: center;
+			text-align: right;
 			background-color: $navbar;
-			border-radius: 50%;
+			border-radius: 0;
 			color: $navbar-light;
 			display: inline-block;
 			margin-left: 0.5em;
-
-			transition: all 0.3s linear;
-
-			.fa {
-				font-size: 1.5em;
-				line-height: 1.8em;
-			}
+			padding: 0.2em 1em 0.3em 2.5em;
+			line-height: 2;
+			transition: background-color 0.3s linear;
 
 			&:hover {
 				background-color: $navbar-light;
+				color: $gray-dark;
+				text-decoration: none;
 
-				.fa {
-					color: $navbar-dark;
-				}
 			}
 		}
 
@@ -166,8 +157,33 @@ $navbar-light: $gray-snow;
 		}
 	}
 
-	@media (min-width: $grid-float-breakpoint) {
+	&.sticky-nav {
 
+		border-bottom-width: 0.5em;
+
+		.navbar-logo img {
+			padding: 0.5em 0;
+			height: 46px;
+			transition: height 0.3s linear;
+		}
+
+		.navbar-nav > li > a {
+			padding: 0.5em 2em;
+			line-height: 2;
+		}
+
+		.social-icons-wrap {
+			line-height: 3.8;
+		}
+
+		.subnav > li > a {
+			padding: 0.8em 2em;
+			line-height: 1;
+		}
+
+	}
+
+	@media (min-width: $grid-float-breakpoint) {
 
 		.navbar-header {
 
@@ -217,7 +233,6 @@ $navbar-light: $gray-snow;
 
 	& > li {
 		list-style-type: none;
-
 
 		.sidr-class-subnav {
 			background-color: #333;

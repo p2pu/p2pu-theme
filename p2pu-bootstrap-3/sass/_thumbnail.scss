@@ -1,31 +1,26 @@
-.thumbnail {
-	position: relative;
-	padding: 0;
-	border: 0;
+.horizontal-thumbnail {
+	@extend .thumbnail;
+
+	padding: 1em 1em 1.5em 1em;
+	color: $gray-dark;
 	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid $gray-light;
 
-	& > .thumbnail-img {
-		width: 100%;
-		height: 150px;
+	img {
+		width: 20%;
+		float: left;
+		margin: 0 1em 1em 0;
 	}
 
-	.caption {
-		position: absolute;
-		background: rgba($gray-snow, 0.85);
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		visibility: hidden;
-		opacity: 0;
-		transition: all 0.5s linear
+	.title {
+		color: $gray-dark;
+		margin-top: 0;
 	}
 
-	&:hover {
-		.caption {
-			opacity: 1;
-			visibility: visible;
-		}
+	.cotent-wrap {
+		overflow: hidden;
 	}
+
+
 }

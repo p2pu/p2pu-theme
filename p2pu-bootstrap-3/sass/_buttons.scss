@@ -1,0 +1,13 @@
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: $gray-dark;
+	border-color: $gray-dark;
+
+	&:hover, &:focus, &:active {
+		background-color: $gray-darker;
+		border-color: $gray-darker;
+	}
+}

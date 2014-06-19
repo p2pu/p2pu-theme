@@ -4,9 +4,10 @@
 	color: $gray-snow;
 	padding: 1.5em 0 2em 0;
 	margin-top: 60px;
+	line-height: 1.5;
 
-	a{
-		color: $p2pu-blue;
+	a {
+		color: $gray-snow;
 		border-bottom: 1px dotted;
 		text-decoration: none;
 		transition: all 0.3s linear;
@@ -20,11 +21,11 @@
 }
 
 .footer-social {
-	ul{
+	ul {
 		list-style-type: none;
 	}
 
-	a{
+	a {
 		font-size: 2em;
 		border-bottom: none;
 
@@ -35,7 +36,21 @@
 }
 
 .cc-by-sa {
-	img{
+	img {
 		margin: 1em 0;
+	}
+}
+
+.footer-links {
+
+	list-style-type: none;
+	padding: 0;
+	line-height: 2;
+
+	li{
+		i {
+			margin-right: 0.2em;
+			font-size: 1.1em;
+		}
 	}
 }
