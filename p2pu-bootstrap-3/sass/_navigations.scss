@@ -58,6 +58,13 @@ $navbar-light: $gray-snow;
 	.navbar-nav {
 		& > li {
 
+			&:hover {
+				.subnav {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+
 			&.active {
 				background-color: $navbar;
 				.subnav {
@@ -132,6 +139,7 @@ $navbar-light: $gray-snow;
 		text-align: center;
 		opacity: 0;
 		visibility: hidden;
+		z-index: 1;
 
 		& > li {
 			float: none;
