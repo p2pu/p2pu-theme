@@ -22,7 +22,7 @@ $gray-lighter:           #F3F4F8;
 $gray-snow:              #FCFCFC;
 
 
-// $brand-primary:         #428bca
+$brand-primary:         #5F9EA0;
 // $brand-success:         #5cb85c
 // $brand-info:            #5bc0de
 // $brand-warning:         #f0ad4e
@@ -34,17 +34,18 @@ $p2pu-green:             #b7d500;
 $p2pu-blue:              #05c6b4;
 $p2pu-yellow:            #ffbc1a;
 
+$white:                  #ffffff;
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //* Background color for `<body>`.
-// $body-bg:               #fff
+$body-bg:               $white;
 //* Global text color on `<body>`.
-// $text-color:            $gray-dark
+$text-color:            $gray-dark;
 
 //* Global textual link color.
-// $link-color:            $brand-primary
+$link-color:            $brand-primary;
 //* Link hover color set via `darken()` function.
 // $link-hover-color:      darken($link-color, 15%)
 
@@ -268,8 +269,8 @@ $p2pu-yellow:            #ffbc1a;
 // Extra small screen / phone
 // Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
 // Note: Deprecated $screen-xs-min as of v3.2.0
-// $screen-xs:                  480px
-// $screen-xs-min:              $screen-xs
+$screen-xs:                  320px;
+$screen-xs-min:              $screen-xs;
 // $screen-phone:               $screen-xs-min
 
 // Small screen / tablet
@@ -305,7 +306,7 @@ $p2pu-yellow:            #ffbc1a;
 // $grid-gutter-width:         30px
 // Navbar collapse
 //* Point at which the navbar becomes uncollapsed.
-// $grid-float-breakpoint:     $screen-sm-min
+$grid-float-breakpoint:     $screen-md-min;
 //* Point at which the navbar begins collapsing.
 // $grid-float-breakpoint-max: ($grid-float-breakpoint - 1)
 
