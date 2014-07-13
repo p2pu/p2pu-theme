@@ -1,13 +1,10 @@
-.btn {
-	border-radius: 0;
-}
 
-.btn-primary {
-	background-color: $gray-dark;
-	border-color: $gray-dark;
-
-	&:hover, &:focus, &:active {
-		background-color: $gray-darker;
-		border-color: $gray-darker;
+// Clearing misterious margin on brn group
+.btn-toolbar {
+	margin-left: 0 !important;
+	> .btn, > .btn-group, .input-group{
+		&:first-child{
+			margin-left: 0 !important;
+		}
 	}
 }
