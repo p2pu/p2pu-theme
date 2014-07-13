@@ -7127,7 +7127,8 @@ button.close {
   color: #fcfcfc;
   padding: 1.5em 0 2em 0;
   margin-top: 60px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 0; }
   .p2pu-footer a {
     color: #fcfcfc;
     border-bottom: 1px dotted;
