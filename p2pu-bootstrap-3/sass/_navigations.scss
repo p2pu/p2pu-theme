@@ -413,3 +413,36 @@ $navbar-light: $gray-snow;
 		}
 	}
 }
+
+.p2putab {
+
+	&:hover, &:focus{
+		background-color: $brand-primary !important;
+		i {
+			@include animation(bounce 1s ease infinite);
+		}
+	}
+}
+@-webkit-keyframes bounce {
+    0%, 10%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40%, 60% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+}
+
+@keyframes bounce {
+    0%, 10%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40%, 60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+}

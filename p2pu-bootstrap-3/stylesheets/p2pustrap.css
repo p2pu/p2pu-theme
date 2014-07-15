@@ -4029,6 +4029,31 @@ tbody.collapse.in {
     text-decoration: none;
     background-color: #aab0bf; }
 
+.p2putab:hover, .p2putab:focus {
+  background-color: #515665 !important; }
+  .p2putab:hover i, .p2putab:focus i {
+    -webkit-animation: bounce 1s ease infinite;
+    -o-animation: bounce 1s ease infinite;
+    animation: bounce 1s ease infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 10%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  40%, 60% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+@keyframes bounce {
+  0%, 10%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  40%, 60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); } }
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 21px;
