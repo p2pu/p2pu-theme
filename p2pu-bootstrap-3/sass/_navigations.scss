@@ -68,9 +68,6 @@ $navbar-light: $gray-snow;
 .navbar-header {
 	font-family: $headings-font-family;
 
-	@media (min-width: $grid-float-breakpoint) {
-		padding: 4px 0;
-	}
 }
 
 // navbar button which is only visible in narrow screen mode
