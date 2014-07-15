@@ -4029,9 +4029,9 @@ tbody.collapse.in {
     text-decoration: none;
     background-color: #aab0bf; }
 
-.p2putab:hover, .p2putab:focus {
+.p2pu-tab:hover, .p2pu-tab:focus {
   background-color: #515665 !important; }
-  .p2putab:hover i, .p2putab:focus i {
+  .p2pu-tab:hover i, .p2pu-tab:focus i {
     -webkit-animation: bounce 1s ease infinite;
     -o-animation: bounce 1s ease infinite;
     animation: bounce 1s ease infinite; }
