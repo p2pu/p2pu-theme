@@ -31,6 +31,14 @@ $navbar-light: $gray-snow;
 	}
 }
 
+.nav > li > a {
+	transition: all 0.3s linear;
+	&:hover, &:focus {
+		background-color: $gray;
+		color: $white;
+	}
+}
+
 .navbar {
 	border-radius: 0;
 	margin: 0;
@@ -49,12 +57,19 @@ $navbar-light: $gray-snow;
 
 }
 
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+	@media (min-width: $screen-sm-min) {
+		max-height: initail;
+	}
+}
+
 //navbar heading
 .navbar-header {
 	font-family: $headings-font-family;
 
 	@media (min-width: $grid-float-breakpoint) {
-		padding: 10px 0;
+		padding: 4px 0;
 	}
 }
 
@@ -82,7 +97,7 @@ $navbar-light: $gray-snow;
 // navbar form, e.g. search and such
 .navbar-form {
 	margin: 0;
-	padding: 19px 15px;
+	padding: 12px 10px;
 
 	@media (min-width: $grid-float-breakpoint) {
 		margin: 0;
@@ -137,7 +152,7 @@ $navbar-light: $gray-snow;
 	& > li {
 		& > a {
 			line-height: 2;
-			padding: 0.4em 2em;
+			padding: 0 1em;
 			font-family: 'Open sans' sans-serif;
 			font-size: 1.1em;
 			text-transform: uppercase;
@@ -157,9 +172,9 @@ $navbar-light: $gray-snow;
 
 	.dropdown-toggle {
 		float: right;
-		padding: 0 20px;
-		line-height: 3;
-		margin-top: -46px;
+		padding: 2px 20px;
+		line-height: 2;
+		margin-top: -34px;
 		position: relative;
 		z-index: 2;
 	}
@@ -178,66 +193,65 @@ $navbar-light: $gray-snow;
 			}
 
 		}
-		&.navbar-right:last-child{
+		&.navbar-right:last-child {
 			margin-right: 0;
 		}
 	}
 
-}
-
-// Setting dropdown to static, so it can be streched trough whole length of screen
-.dropdown {
-	position: static !important;
-}
-
-// Dropdown menu
-.dropdown-menu {
-	position: relative;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border: none;
-	border-radius: 0;
-	border-bottom: 1px solid transparent;
-	box-shadow: none;
-	text-align: left;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 1;
-	& > li {
-		float: none;
-		display: block;
-		& > a {
-			padding: 1.5em 2em;
-			line-height: 1;
-			font-size: 0.9em;
-			font-family: 'Open sans' sans-serif;
-			padding: 5px 15px 5px 25px;
-			line-height: 20px;
-			text-transform: uppercase;
-			transition: background-color 0.3s linear;
-			&:before {
-				content: "\f054";
-				font-family: 'FontAwesome';
-				margin-right: 10px;
-				font-size: 8px;
-			}
-		}
+	// Setting dropdown to static, so it can be streched trough whole length of screen
+	.dropdown {
+		position: static !important;
 	}
 
-	@media (min-width: $grid-float-breakpoint) {
-		position: absolute;
+	// Dropdown menu
+	.dropdown-menu {
+		position: relative;
 		width: 100%;
-		text-align: center;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid transparent;
+		box-shadow: none;
+		text-align: left;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1;
 		& > li {
-			display: inline-block;
+			float: none;
+			display: block;
 			& > a {
+				padding: 1em;
 				line-height: 1;
-				font-size: 1em;
-				padding: 1.5em 2em;
-
+				font-size: 0.9em;
+				font-family: 'Open sans' sans-serif;
+				padding: 5px 15px 5px 25px;
+				line-height: 20px;
+				text-transform: uppercase;
+				transition: background-color 0.3s linear;
 				&:before {
-					content: "";
+					content: "\f054";
+					font-family: 'FontAwesome';
+					margin-right: 10px;
+					font-size: 8px;
+				}
+			}
+		}
+
+		@media (min-width: $grid-float-breakpoint) {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			& > li {
+				display: inline-block;
+				& > a {
+					line-height: 1;
+					font-size: 1em;
+					padding: 1em;
+
+					&:before {
+						content: "";
+					}
 				}
 			}
 		}
@@ -263,7 +277,7 @@ $navbar-light: $gray-snow;
 	}
 
 	.navbar-nav {
-		& > li > a{
+		& > li > a {
 			&:hover, &:focus {
 				background-color: $navbar;
 				color: $navbar-light;
@@ -287,32 +301,30 @@ $navbar-light: $gray-snow;
 			}
 		}
 
-	}
-
-	.dropdown-menu {
-		background-color: $navbar;
-		border-bottom-color: $navbar;
-		& > li a{
-			&:hover, &:focus {
-				background-color: darken($brand-primary, 10%);
-				color: $gray-light !important;
-			}
-		}
-		& > li.active a {
-			color: $gray-light;
-			background-color: darken($brand-primary, 10%);
-		}
-
-		@media (min-width: $grid-float-breakpoint) {
+		.dropdown-menu {
 			background-color: $navbar;
-			& > li > a {
+			border-bottom-color: $navbar;
+			& > li a {
+				&:hover, &:focus {
+					color: $gray-light !important;
+				}
+			}
+			& > li.active a {
+				color: $gray-light;
+				background-color: darken($brand-primary, 10%);
+			}
+
+			@media (min-width: $grid-float-breakpoint) {
 				background-color: $navbar;
+				& > li > a {
+					background-color: $navbar;
+				}
 			}
 		}
-	}
 
-	.open a {
-		background-color: $navbar-dark;
+		.open a {
+			background-color: $navbar-dark;
+		}
 	}
 }
 
@@ -335,7 +347,7 @@ $navbar-light: $gray-snow;
 	}
 
 	.navbar-nav {
-		& > li > a{
+		& > li > a {
 			color: $navbar-dark;
 			&:hover, &:focus {
 				background-color: $gray;
@@ -360,27 +372,44 @@ $navbar-light: $gray-snow;
 			}
 		}
 
-	}
-
-	.dropdown-menu {
-		background-color: $gray;
-		border-bottom-color: $gray;
-		& > li a{
-			&:hover, &:focus {
-				background-color: darken($gray, 10%);
-				color: $gray-dark !important;
-			}
-		}
-		& > li.active a {
-			color: $gray-dark;
-			background-color: darken($brand-primary, 10%);
-		}
-
-		@media (min-width: $grid-float-breakpoint) {
+		.dropdown-menu {
 			background-color: $gray;
-			& > li > a {
-				background-color: $gray;
+			border-bottom-color: $gray;
+			& > li a {
+				&:hover, &:focus {
+					color: $gray-dark !important;
+				}
 			}
+			& > li.active a {
+				color: $gray-dark;
+				background-color: darken($brand-primary, 10%);
+			}
+
+			@media (min-width: $grid-float-breakpoint) {
+				background-color: $gray;
+				& > li > a {
+					background-color: $gray;
+				}
+			}
+		}
+	}
+}
+
+.nav .open > a {
+	&:hover, &:focus {
+		background-color: $gray;
+		border-color: $gray;
+		color: $white;
+	}
+}
+
+.dropdown-menu {
+	padding: 0;
+	margin-top: 0;
+	& > li {
+		& > a:hover, > a:focus {
+			text-decoration: none;
+			background-color: $gray;
 		}
 	}
 }

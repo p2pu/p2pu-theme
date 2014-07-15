@@ -2,6 +2,14 @@ body {
     padding-top: 100px
 }
 
+.first {
+    padding-left: 0;
+}
+
+.last {
+    padding-right: 0;
+}
+
 .bs-docs-section {
     margin-top: 8em
 }
@@ -17,7 +25,8 @@ body {
     left: auto;
     bottom: auto;
     z-index: 1;
-    display: block
+    display: block;
+    overflow: hidden;
 }
 
 .bs-component .modal-dialog {
@@ -29,6 +38,10 @@ body {
     display: inline-block;
     width: 220px;
     margin: 20px
+}
+
+.bs-docs-sidebar.affix {
+    top: 120px;
 }
 
 #source-button {

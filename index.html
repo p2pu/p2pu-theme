@@ -15,7 +15,7 @@
 
 	<style type="text/css"></style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-spy" data-offset="120">
 <div class="navbar navbar-default navbar-fixed-top">
 	<div class="p2pu-color-divider-wrap">
 		<div class="p2pu-color-divider"></div>
@@ -33,7 +33,7 @@
 					<a href="#" id="strap">Docs</a>
 					<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
 					      data-toggle="dropdown"></span>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu hidden-print hidden-md hidden-lg">
 						<li><a href="#navbar">Navbar</a></li>
 						<li><a href="#buttons">Buttons</a></li>
 						<li><a href="#type">Typography</a></li>
@@ -72,6 +72,24 @@
 	</div>
 </div>
 
+<div class="col-md-2 first navbar-spy">
+	<nav data-spy="affix" data-offset-top="120" data-offset-bottom="400"
+	     class="bs-docs-sidebar affix-top">
+		<ul class="nav nav-pills nav-stacked hidden-print hidden-xs hidden-sm">
+			<li><a href="#navbar">Navbar</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+			<li><a href="#type">Typography</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#nav">Navs</a></li>
+			<li><a href="#indicators">Indicators</a></li>
+			<li><a href="#progress">Progress bars</a></li>
+			<li><a href="#container">Containers</a></li>
+			<li><a href="#dialogs">Dialogs</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="col-md-10">
 <div class="row">
 	<div class="col-xs-12">
 		<table class="table table-bordered">
@@ -81,17 +99,23 @@
 				<th>Instructions</th>
 			</tr>
 			<tr>
-				<td>Download</td>
+				<td>Download
+					<p class="text-muted">+ Arvo, Open Sans, Font Awesome, Javascript</p>
+				</td>
 				<td>
-					<a class="btn btn-primary" href="https://raw.githubusercontent.com/ercchy/p2pu-css-framework/gh-pages/p2pu-bootstrap-3/stylesheets/p2pustrap.css" rel="stylesheet">p2pustrap.complete.min.css</a>
+					<a class="btn btn-primary"
+					   href="p2pu-bootstrap-3/p2pustrap.zip"
+					   rel="stylesheet">p2pustrap.complete.zipball</a>
 				</td>
 			</tr>
 			<tr>
-				<td>Hosted</td>
+				<td>Hosted
+					<p class="text-muted">Only barebone CSSS</p>
+				</td>
 				<td>
 					<div>
 						<pre><code><span class="tag">&lt;<span class="title">link</span> <span
-								class="attribute">href</span>=<span class="value">"https://raw.githubusercontent.com/ercchy/p2pu-css-framework/gh-pages/p2pu-bootstrap-3/stylesheets/p2pustrap.css"</span> <span
+								class="attribute">href</span>=<span class="value">"https://raw.githubusercontent.com/p2pu/p2pu-css-framework/gh-pages/p2pu-bootstrap-3/stylesheets/p2pustrap.css"</span> <span
 								class="attribute">rel</span>=<span
 								class="value">"stylesheet"</span>&gt;</span></code></pre>
 					</div>
@@ -134,7 +158,6 @@
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
 									<li><a href="#">Separated link</a></li>
-									<li><a href="#">One more separated link</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -181,7 +204,6 @@
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
 									<li><a href="#">Separated link</a></li>
-									<li><a href="#">One more separated link</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -221,7 +243,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-12">
 
 			<p class="bs-component">
 				<button type="button" class="btn btn-default">Default</button>
@@ -321,7 +343,10 @@
 			</p>
 
 		</div>
-		<div class="col-lg-6">
+	</div>
+	<h3>Button groups</h3>
+	<div class="row">
+		<div class="col-lg-12">
 
 			<p class="bs-component">
 				<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
@@ -336,7 +361,7 @@
 				</div>
 			</div>
 
-			<div class="bs-component" style="margin-bottom: 15px;">
+			<div class="bs-component col-lg-7 first" style="margin-bottom: 15px;">
 				<div class="btn-toolbar">
 					<div class="btn-group">
 						<button type="button" class="btn btn-default">1</button>
@@ -351,7 +376,7 @@
 						<button type="button" class="btn btn-default">7</button>
 					</div>
 
-					<div class="btn-group">
+					<div class="btn-group" style="width: 160px;">
 						<button type="button" class="btn btn-default">8</button>
 						<div class="btn-group">
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -368,7 +393,7 @@
 				</div>
 			</div>
 
-			<div class="bs-component">
+			<div class="bs-component col-lg-5">
 				<div class="btn-group-vertical">
 					<button type="button" class="btn btn-default">Button</button>
 					<button type="button" class="btn btn-default">Button</button>
@@ -646,7 +671,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="col-lg-4 col-lg-offset-1">
+		<div class="col-lg-5 col-lg-offset-1">
 
 			<form class="bs-component">
 				<div class="form-group">
@@ -846,7 +871,7 @@
 
 
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-6">
 			<h2 id="pagination">Pagination</h2>
 
 			<div class="bs-component">
@@ -879,7 +904,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-6">
 			<h2 id="pager">Pager</h2>
 
 			<div class="bs-component">
@@ -962,7 +987,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-6">
 			<h2>Labels</h2>
 
 			<div class="bs-component">
@@ -974,7 +999,7 @@
 				<span class="label label-info">Info</span>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-6">
 			<h2>Badges</h2>
 
 			<div class="bs-component">
@@ -1348,7 +1373,7 @@
 		</div>
 	</div>
 </div>
-
+</div>
 <div id="source-modal" class="modal fade">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -1400,7 +1425,7 @@
 				Unless otherwise noted, all the documentation on this site are licensed under a
 				<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
 					Creative Commons Attribution Share Alike 4.0</a> Unported license. <br>
-					All the code licensed under <a
+				All the code licensed under <a
 					href="https://github.com/ercchy/p2pu-css-framework/blob/gh-pages/LICENSE">MIT</a>.
 			</p>
 		</div>

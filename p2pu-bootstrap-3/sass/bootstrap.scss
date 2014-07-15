@@ -56,8 +56,13 @@
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
-@import "fontawesome/scss/font-awesome";
 
 @import "footer";
+
+// import fontawesome font
+@import "fontawesome/scss/font-awesome";
+// Import of the fonts
+@import "fonts";
+
 
 
