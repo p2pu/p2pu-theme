@@ -415,34 +415,41 @@ $navbar-light: $gray-snow;
 }
 
 .p2pu-tab {
-
-	&:hover, &:focus{
+	float: left;
+	padding: 19.5px 15px;
+	font-size: 19px;
+	line-height: 21px;
+	height: 60px;
+	color: $white;
+	&:hover, &:focus {
 		background-color: $brand-primary !important;
+		color: $navbar-light;
 		i {
 			@include animation(bounce 1s ease infinite);
 		}
 	}
 }
+
 @-webkit-keyframes bounce {
-    0%, 10%, 20%, 50%, 80% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    40%, 60% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px)
-    }
+	0%, 10%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+	40%, 60% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px)
+	}
 }
 
 @keyframes bounce {
-    0%, 10%, 20%, 50%, 80% {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0)
-    }
-    40%, 60% {
-        -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        transform: translateY(-5px)
-    }
+	0%, 10%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0)
+	}
+	40%, 60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px)
+	}
 }
