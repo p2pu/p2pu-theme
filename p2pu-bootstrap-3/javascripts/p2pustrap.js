@@ -3,6 +3,15 @@
 (function () {
 
 	$(function () {
+		// m2mu tab
+		$(".p2pu-tab").p2puSlider({
+                navbarContainer: '.navbar',
+                icon: '.p2pu-tab-icon',
+                iconUp: 'fa fa-chevron-down',
+                iconDown: 'fa fa-chevron-up'
+            });
+
+		// Smoth scrolling
 		$('a[href*=#]:not([href=#])').click(function () {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 				var target = $(this.hash);
@@ -16,7 +25,7 @@
 			}
 		});
 
-
+		// Show source code
         var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
             var html = $(this).parent().html();
             html = cleanSource(html);
