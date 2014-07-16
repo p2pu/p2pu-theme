@@ -23,12 +23,14 @@
 			<a class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
 				<i class="fa fa-bars"></i>
 			</a>
+			<a class="p2pu-tab" href="#">
+				<i class="fa fa-chevron-down p2pu-tab-icon"></i>
+			</a>
 		</div>
+
+
 		<div class="navbar-collapse collapse" id="navbar-main">
 			<ul class="nav navbar-nav">
-				<li><a class="p2pu-tab" href="#">
-					<i class="fa fa-chevron-down p2pu-tab-icon"></i>
-				</a></li>
 				<li class="active dropdown">
 					<a href="#" id="strap">Docs</a>
 					<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
@@ -165,7 +167,6 @@
 							<input type="text" class="form-control col-lg-8" placeholder="Search">
 						</form>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Link</a></li>
 							<li class="dropdown">
 								<a href="#">Dropdown</a>
 								<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
@@ -211,7 +212,6 @@
 							<input type="text" class="form-control col-lg-8" placeholder="Search">
 						</form>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Link</a></li>
 							<li class="dropdown">
 								<a href="#">Dropdown</a>
 								<ul class="dropdown-menu">
@@ -1437,10 +1437,14 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="p2pu-bootstrap-3/javascripts/jquery-1.11.1.min.js"><\/script>')</script>
 <script
 		src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
 <script type="text/javascript"
         src="http://rawgithub.com/p2pu/p2pu_navigation_widget/master/p2pu_menu_slider.js"></script>
 <script src="p2pu-bootstrap-3/javascripts/p2pustrap.js"></script>
+<script>
+	P2PUDocs.Splash.init();
+</script>
   
 
