@@ -22,3 +22,9 @@ And then add the following code to the end of your body section:
 ## Modifying the framework
 
 To change the framework ...
+We develop this using SCSS. To make changes, do this, to compile the final CSS, do this. blah, blah
+
+## Using the template with your own custom CSS on a site
+
+## Submitting bugs
+
