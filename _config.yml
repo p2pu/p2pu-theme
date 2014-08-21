@@ -1,0 +1,3 @@
+baseurl: /p2pu-css-framework
+sass:
+    style: :compressed
