@@ -62,6 +62,11 @@ $p2pu-green:    #B7D500;
 $p2pu-yellow:   #FFBC1A;
 $p2pu-orange:   #FC7100;
 
+$p2pu-light-blue:       transparentize($p2pu-blue, 0.85);
+$p2pu-light-green:      transparentize($p2pu-green, 0.85);
+$p2pu-light-yellow:     transparentize($p2pu-yellow, 0.85);
+$p2pu-light-orange:     transparentize($p2pu-orange, 0.85);
+
 $primary:       $gray-darker;
 $secondary:     $gray-lighter;
 $success:       $p2pu-green;
