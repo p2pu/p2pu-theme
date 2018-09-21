@@ -268,11 +268,11 @@ $transition-collapse:         height .35s ease !default;
 
 // stylelint-disable value-keyword-case
 
+$fa-font-path:                "~@fortawesome/fontawesome-free/webfonts";
+
 $font-family-serif:           Georgia, "Times New Roman", Times, serif;
 
 $font-family-sans-serif:      "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-sans-serif-light: "Open Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-sans-serif-bold: "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
@@ -282,9 +282,9 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
@@ -298,7 +298,7 @@ $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        "Arvo", Helvetica, Arial, sans-serif;
-$headings-font-weight:        700;
+$headings-font-weight:        $font-weight-bold;
 $headings-line-height:        1.1;
 $headings-color:              inherit !default;
 

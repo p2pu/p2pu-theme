@@ -1,15 +1,17 @@
 {
   "name": "p2pustrap-theme",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "P2PU theme built on Bootstrap 4.0",
   "main": "index.js",
   "repository": "https://github.com/p2pu/p2pu-css-framework",
   "author": "Peer 2 Peer University (P2PU)",
   "license": "MIT",
   "dependencies": {
+    "aos": "^2.3.3",
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "scrollmagic": "^2.0.5"
   },
   "scripts": {
     "build": "webpack"
