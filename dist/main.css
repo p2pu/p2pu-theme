@@ -6421,6 +6421,8 @@ body {
       body a.undecorated:hover, body a.undecorated:focus, body a.undecorated:active {
         opacity: 1;
         text-decoration: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    margin-top: 1rem; }
   body .small {
     font-size: 0.875rem; }
   body .large {
@@ -6531,6 +6533,9 @@ body {
           transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: color 0.3s linear; }
   .p2pu-btn:before {
     content: "";
@@ -6641,8 +6646,9 @@ nav {
     align-items: center; }
     nav .nav-items > .nav-item {
       margin: 0 15px;
-      cursor: pointer;
-      color: #515665; }
+      cursor: pointer; }
+      nav .nav-items > .nav-item a, nav .nav-items > .nav-item button {
+        color: #515665; }
       nav .nav-items > .nav-item i {
         margin-right: 6px; }
       nav .nav-items > .nav-item li a {

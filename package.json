@@ -1,6 +1,6 @@
 {
-  "name": "p2pustrap-theme",
-  "version": "1.0.7",
+  "name": "p2pu-theme",
+  "version": "1.0.0",
   "description": "P2PU theme built on Bootstrap 4.0",
   "main": "index.js",
   "repository": "https://github.com/p2pu/p2pu-css-framework",
