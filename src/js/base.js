@@ -1,9 +1,9 @@
 import AOS from 'aos';
-import ScrollMagic from 'scrollmagic'
+import ScrollMagic from 'scrollmagic';
 
 // Menu
 
-$(function() {
+(function($) {
   $('#full-page-menu a, #full-page-menu button').each(function() {
     $(this).attr('tabindex', '-1')
   })
@@ -38,20 +38,24 @@ $(function() {
   $('#full-page-menu a').click(closeMenu);
 
   $('body').css("padding-bottom", $('footer').height());
-})
+}(jQuery))
 
 // Scroll Magic
 
 var controller = new ScrollMagic.Controller();
 
-$('.subtitle').each(function(index, subtitle) {
-  new ScrollMagic.Scene({
-    triggerElement: subtitle,
-    triggerHook: 0.6
-  })
-  .setClassToggle(subtitle, "active")
-  .addTo(controller);
-});
+(function($){
+
+  $('.subtitle').each(function(index, subtitle) {
+    new ScrollMagic.Scene({
+      triggerElement: subtitle,
+      triggerHook: 0.6
+    })
+    .setClassToggle(subtitle, "active")
+    .addTo(controller);
+  });
+
+}(jQuery))
 
 // AOS
 
