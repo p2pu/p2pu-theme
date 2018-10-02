@@ -3,3 +3,5 @@ lib/.sass-cache/*
 .sass-cache/*
 .rvmrc
 .idea
+
+node_modules

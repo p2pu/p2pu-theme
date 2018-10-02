@@ -1,3 +1,0 @@
-[submodule "sass-bootstrap"]
-	path = bootstrap_3/sass-bootstrap
-	url = git@github.com:jlong/sass-bootstrap.git
