@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    main: "./src/index.js",
+    base: "./src/index.js",
   },
   output: {
     filename: '[name].js',
@@ -47,11 +47,10 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    jquery: 'jQuery'
+  },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
