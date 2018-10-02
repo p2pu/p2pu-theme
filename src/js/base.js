@@ -1,9 +1,11 @@
 import AOS from 'aos';
 import ScrollMagic from 'scrollmagic';
 
-// Menu
 
-(function($) {
+(function() {
+
+  // Menu
+
   $('#full-page-menu a, #full-page-menu button').each(function() {
     $(this).attr('tabindex', '-1')
   })
@@ -38,13 +40,10 @@ import ScrollMagic from 'scrollmagic';
   $('#full-page-menu a').click(closeMenu);
 
   $('body').css("padding-bottom", $('footer').height());
-}(jQuery))
 
-// Scroll Magic
+  // Scroll Magic
 
-var controller = new ScrollMagic.Controller();
-
-(function($){
+  var controller = new ScrollMagic.Controller();
 
   $('.subtitle').each(function(index, subtitle) {
     new ScrollMagic.Scene({
@@ -55,7 +54,7 @@ var controller = new ScrollMagic.Controller();
     .addTo(controller);
   });
 
-}(jQuery))
+}())
 
 // AOS
 
