@@ -4,7 +4,13 @@ html {
 
 body {
   min-height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  main {
+    flex: 1 0 auto;
+  }
 }
 
 main {

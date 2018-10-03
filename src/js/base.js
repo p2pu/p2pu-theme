@@ -39,8 +39,6 @@ import ScrollMagic from 'scrollmagic';
 
   $('#full-page-menu a').click(closeMenu);
 
-  $('body').css("padding-bottom", $('footer').height());
-
   // Scroll Magic
 
   var controller = new ScrollMagic.Controller();
