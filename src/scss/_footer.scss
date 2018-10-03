@@ -131,12 +131,6 @@ footer.home-footer {
       color: $gray-darker;
     }
   }
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: $padding-md;
-  }
 }
 
 @media (max-width: map-get($grid-breakpoints, "md")) {
