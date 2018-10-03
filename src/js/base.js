@@ -2,7 +2,7 @@ import AOS from 'aos';
 import ScrollMagic from 'scrollmagic';
 
 
-(function() {
+(function($) {
 
   // Menu
 
@@ -54,7 +54,7 @@ import ScrollMagic from 'scrollmagic';
     .addTo(controller);
   });
 
-}())
+}(jQuery))
 
 // AOS
 
