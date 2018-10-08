@@ -1,0 +1,23 @@
+language: python
+python:
+- 3.6
+branches:
+  only:
+  - master
+  - release
+services:
+- docker
+install: 
+- pip install awscli
+sudo: false
+script:
+- docker run --rm -it --volume `pwd`:/opt/app --workdir /opt/app node:carbon-alpine
+  /bin/sh -c "npm install && npm run build"
+after_success:
+- if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then echo "Deployments are only done
+  for branches. "; exit 0; fi
+- echo "Deploying commit $TRAVIS_COMMIT"
+- aws s3 sync ./dist s3://p2pu-theme/ --delete --storage-class REDUCED_REDUNDANCY
+env:
+  global:
+    secure: pDN2WrI/E7v2IWN7LnF1lb0ZMpvj0k2dVaYeHBvJuLQSpflW9f2AylXZd46q3/GoRZZL5lJhVjw2Kg3Vk2dLiRufjH6eDGn+7CVB+lK3ZfkDt0vGSVkQgxFOcC5B+Fjf5YyUIzF/+2ex1t/Lz7cjsE9bOojSZhAM1lYtUq4k3C0=
