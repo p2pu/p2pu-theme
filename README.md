@@ -2,6 +2,8 @@
 
 > a.k.a. "P2PUstrap"
 
+[![Build Status](https://travis-ci.org/p2pu/p2pu-css-framework.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-css-framework)
+
 We use this framework to make sure all our web properties follow the same constent brand. You can use it too if you want a website that looks like ours!
 
 ## Getting started
