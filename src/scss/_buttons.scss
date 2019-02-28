@@ -72,6 +72,41 @@
     &:before {
       background: lighten($p2pu-blue, 1%);
     }
+
+    &.secondary {
+      background: $white;
+      color: $p2pu-blue;
+      border: 2px solid $p2pu-blue;
+      &:before {
+        background: transparentize($p2pu-blue, 0.95);
+      }
+
+      &:hover {
+        color: $p2pu-blue;
+      }
+    }
+  }
+
+  &.orange {
+    background: $p2pu-orange;
+    color: $white;
+
+    &:before {
+      background: lighten($p2pu-orange, 1%);
+    }
+
+    &.secondary {
+      background: $white;
+      color: $p2pu-orange;
+      border: 2px solid $p2pu-orange;
+      &:before {
+        background: transparentize($p2pu-orange, 0.95);
+      }
+
+      &:hover {
+        color: $p2pu-orange;
+      }
+    }
   }
 
   &.yellow {
@@ -81,6 +116,19 @@
     &:before {
       background: lighten($p2pu-yellow, 3%);
     }
+
+    &.secondary {
+      background: $white;
+      color: $p2pu-yellow;
+      border: 2px solid $p2pu-yellow;
+      &:before {
+        background: transparentize($p2pu-yellow, 0.95);
+      }
+
+      &:hover {
+        color: $p2pu-yellow;
+      }
+    }
   }
 
   &.green {
@@ -89,6 +137,19 @@
 
     &:before {
       background: lighten($p2pu-green, 1%);
+    }
+
+    &.secondary {
+      background: $white;
+      color: $p2pu-green;
+      border: 2px solid $p2pu-green;
+      &:before {
+        background: transparentize($p2pu-green, 0.95);
+      }
+
+      &:hover {
+        color: $p2pu-green;
+      }
     }
   }
 
