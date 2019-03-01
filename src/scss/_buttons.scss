@@ -5,11 +5,12 @@
   font-family: $font-family-sans-serif;
   font-weight: $font-weight-bold;
   padding: 10px 20px;
-  border: none;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
   transition: color 0.3s linear;
+  display: inline-block;
+  margin: 2px;
 
   &:before {
     content: "";
@@ -34,6 +35,7 @@
 
   &.dark {
     background: $gray-darker;
+    border: 2px solid $gray-darker;
     color: $white;
 
     &:before {
@@ -43,6 +45,7 @@
 
   &.light {
     background: $gray-lighter;
+    border: 2px solid $gray-lighter;
     color: $gray-darker;
 
     &:before {
@@ -67,6 +70,7 @@
 
   &.blue {
     background: $p2pu-blue;
+    border: 2px solid $p2pu-blue;
     color: $white;
 
     &:before {
@@ -89,6 +93,7 @@
 
   &.orange {
     background: $p2pu-orange;
+    border: 2px solid $p2pu-orange;
     color: $white;
 
     &:before {
@@ -111,6 +116,7 @@
 
   &.yellow {
     background: $p2pu-yellow;
+    border: 2px solid $p2pu-yellow;
     color: $white;
 
     &:before {
@@ -133,6 +139,7 @@
 
   &.green {
     background: $p2pu-green;
+    border: 2px solid $p2pu-green;
     color: $white;
 
     &:before {
