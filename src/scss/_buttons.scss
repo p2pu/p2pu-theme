@@ -41,6 +41,19 @@
     &:before {
       background: lighten($gray-darker, 5%);
     }
+
+    &.secondary {
+      background: $white;
+      color: $gray-darker;
+      border: 2px solid $gray-darker;
+      &:before {
+        background: transparentize($gray-darker, 0.95);
+      }
+
+      &:hover {
+        color: $gray-darker;
+      }
+    }
   }
 
   &.light {
