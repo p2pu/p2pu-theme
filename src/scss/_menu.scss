@@ -49,6 +49,7 @@ nav {
      > .nav-item {
       margin: 0 15px;
       cursor: pointer;
+      white-space: nowrap;
 
       a, button {
         color: $primary;
@@ -98,6 +99,16 @@ nav {
         li {
           padding: 3px 20px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: map-get($grid-breakpoints, "md")) {
+  nav {
+    .nav-items {
+      > .nav-item {
+        margin: 0 5px;
       }
     }
   }
