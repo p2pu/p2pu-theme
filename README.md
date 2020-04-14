@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/p2pu/p2pu-css-framework.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-css-framework)
+
 # P2PU CSS Framework
 
 > a.k.a. "P2PUstrap"
@@ -12,7 +14,7 @@ The theme is based on Bootstrap 4 and includes CSS and JavaScript. You can use j
 
 In your `<head>` tag:
 ```	
-<link rel="stylesheet" href="https://rawgit.com/s-kennedy/p2pu-css-framework/master/dist/discourse.css">
+<link rel="stylesheet" href="https://d3gh4aef1l5qvi.cloudfront.net/discourse.css">
 ```
 At the end of your `<body>` tag:
 ```
@@ -23,7 +25,7 @@ At the end of your `<body>` tag:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<script src="https://rawgit.com/s-kennedy/p2pu-css-framework/master/dist/base.js"></script>
+<script src="https://d3gh4aef1l5qvi.cloudfront.net/base.js"></script>
 ```
 As you can see, you'll need to include Bootstrap and its dependencies, jQuery and popper.js. 
 
