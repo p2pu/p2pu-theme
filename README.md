@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/p2pu/p2pu-css-framework.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-css-framework)
 
-# P2PU CSS Framework
+# P2PU Theme
 
 > a.k.a. "P2PUstrap"
 
