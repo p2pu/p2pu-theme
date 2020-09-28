@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/p2pu/p2pu-css-framework.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-css-framework)
+[![Build Status](https://travis-ci.org/p2pu/p2pu-theme.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-theme)
 
 # P2PU Theme
 
