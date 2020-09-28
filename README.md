@@ -4,7 +4,7 @@
 
 > a.k.a. "P2PUstrap"
 
-We use this framework to make sure all our web properties follow the same constent brand. You can use it too if you want a website that looks like ours!
+We use this framework to make sure all our web properties follow a consistent brand. You can use it too if you want a website that looks like ours!
 
 ## Getting started
 
