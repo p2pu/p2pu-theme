@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/p2pu/p2pu-theme.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-theme)
+[![Build Status](https://travis-ci.org/p2pu/p2pu-css-framework.svg?branch=master)](https://travis-ci.org/p2pu/p2pu-css-framework)
 
-# P2PU Theme
+# P2PU CSS Framework
 
 > a.k.a. "P2PUstrap"
 
-We use this framework to make sure all our web properties follow a consistent brand. You can use it too if you want a website that looks like ours!
+We use this framework to make sure all our web properties follow the same constent brand. You can use it too if you want a website that looks like ours!
 
 ## Getting started
 

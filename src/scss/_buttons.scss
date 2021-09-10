@@ -1,17 +1,16 @@
 .p2pu-btn {
+  letter-spacing: .03em;
+  padding: 7px 31px;
   border-radius: 2em;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: $font-size-base * 1.2;
   font-family: $font-family-sans-serif;
-  font-weight: $font-weight-bold;
-  padding: 10px 20px;
+  font-weight: $font-weight-semibold;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
   transition: color 0.3s linear;
   display: inline-block;
-  margin: 2px;
-
   &:before {
     content: "";
     position: absolute;
@@ -32,37 +31,88 @@
     transform: scaleX(1);
   }
 
-
-  &.dark {
-    background: $gray-darker;
-    border: 2px solid $gray-darker;
+  &.btn{
+    &-sm{
+      font-size: $font-size-sm;
+      padding: 3px 19px;
+    }
+    &-sm-sm{
+      @media (min-width: map-get($grid-breakpoints, "sm")) {
+        font-size: $font-size-sm;
+        padding: 3px 19px;
+      }
+    }
+    &-md-sm{
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: $font-size-sm;
+        padding: 3px 19px;
+      }
+    }
+    &-lg-sm{
+      @media (min-width: map-get($grid-breakpoints, "lg")) {
+        font-size: $font-size-sm;
+        padding: 3px 19px;
+      }
+    }
+    &-xl-sm{
+      @media (min-width: map-get($grid-breakpoints, "xl")) {
+        font-size: $font-size-sm;
+        padding: 3px 19px;
+      }
+    }
+  }
+  
+  &.btn{
+    &-base{
+      padding: 7px 31px;
+      font-size: $font-size-base * 1.2;
+    }
+    &-sm-base{
+      @media (min-width: map-get($grid-breakpoints, "sm")) {
+        padding: 7px 31px;
+        font-size: $font-size-base * 1.2;
+      }
+    }
+    &-md-base{
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        padding: 7px 31px;
+        font-size: $font-size-base * 1.2;
+      }
+    }
+    &-lg-base{
+      @media (min-width: map-get($grid-breakpoints, "lg")) {
+        padding: 7px 31px;
+        font-size: $font-size-base * 1.2;
+      }
+    }
+    &-xl-base{
+      @media (min-width: map-get($grid-breakpoints, "xl")) {
+        padding: 7px 31px;
+        font-size: $font-size-base * 1.2;
+      }
+    }
+  }
+  
+  &.gray {
+    background: $gray;
+    border: 2px solid $gray;
     color: $white;
 
     &:before {
-      background: lighten($gray-darker, 5%);
+      background: lighten($gray, 5%);
     }
 
     &.secondary {
       background: $white;
-      color: $gray-darker;
-      border: 2px solid $gray-darker;
+      color: $gray;
+      border: 2px solid $gray;
       &:before {
-        background: transparentize($gray-darker, 0.95);
+        background: transparentize($gray, 0.95);
       }
 
       &:hover {
-        color: $gray-darker;
+        color: $gray;
       }
-    }
-  }
-
-  &.light {
-    background: $gray-lighter;
-    border: 2px solid $gray-lighter;
-    color: $gray-darker;
-
-    &:before {
-      background: $white;
     }
   }
 
@@ -182,27 +232,20 @@
   }
 
   &.with-outline {
-    border: 2px solid $gray-lighter;;
+    border: 2px solid $gray-light;;
   }
 
   @media (max-width: map-get($grid-breakpoints, "sm")) {
-    padding: 0.4em 1em;
-
-    &.dark {
-      background: $gray-darker;
-      color: $white;
-
-      &:before {
-        background: $gray-darker;
-      }
-    }
-
-    &.light {
-      background: $white;
-      color: $gray-darker;
-
-      &:before {
-        background: $white;
+    font-size: 1.2rem;
+  }
+  &-md{
+    @media (max-width: map-get($grid-breakpoints, "md")) {
+      border: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: transparent !important;
+      &:before{
+        display: none;
       }
     }
   }

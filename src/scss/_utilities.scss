@@ -5,7 +5,12 @@
 .pos-relative {
   position: relative;
 }
-
+.serif{
+  font-family: $font-family-serif;
+}
+.sans-serif{
+  font-family: $font-family-sans-serif;
+}
 .text {
   &-blue {
     color: $p2pu-blue;
@@ -23,21 +28,47 @@
     color: $p2pu-orange;
   }
 
-  &-dark {
-    color: $gray-darker;
-  }
-
   &-black {
     color: $black;
   }
 
+  &-dark {
+    color: $gray-dark;
+  }
+
+  &-gray {
+    color: $gray;
+  }
+  
   &-light {
+    color: $gray-light;
+  }
+  
+  &-lighter {
     color: $gray-snow;
   }
 
   &-white {
     color: $white;
   }
+  
+  &-cream {
+    color: $cream;
+  }
+  &-cream-dark {
+    color: $cream-dark;
+  }
+  &-transparent{
+    color: $transparent;
+  }
+  
+  &-red-error {
+    color: $red-error;
+  }
+  &-pink-error {
+    color: $pink-error;
+  }
+
 }
 
 .bg {
@@ -58,10 +89,87 @@
   }
 
   &-dark {
-    background-color: $gray-darker;
+    background-color: $gray-dark;
   }
 
+  &-gray {
+    background-color: $gray;
+  }
+  
   &-light {
+    background-color: $gray-light;
+  }
+
+  &-lighter {
     background-color: $gray-snow;
   }
+  
+  &-cream {
+    background-color: $cream;
+  }
+  &-cream-dark {
+    background-color: $cream-dark;
+  }
+  
+  &-transparent{
+    background-color: $transparent;
+  }
+  &-red-error {
+    background-color: $red-error;
+  }
+  &-pink-error {
+    background-color: $pink-error;
+  }
 }
+
+// stop column styles at breakpoint
+
+.col{
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    &-sm-0{
+      display: inherit !important;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    &-md-0{
+      display: inherit !important;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    &-lg-0{
+      display: inherit !important;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, "xl")) {
+    &-xl-0{
+      display: inherit !important;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, "xxl")) {
+    &-xxl-0{
+      display: inherit !important;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

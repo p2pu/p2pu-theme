@@ -1,4 +1,36 @@
-footer.home-footer {
+footer#footer{
+  .nav-heading{
+    padding-top: $spacer;
+    padding-bottom: $spacer * .5;
+    font-weight: bold;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+  }
+  .nav{
+    margin-bottom: auto;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    .nav-item{
+      a{
+        color: $white;
+        font-weight: lighter;
+      }
+    }
+  }
+  .donate{
+    span{
+      padding-bottom: 2px;
+    }
+  }
+}
+
+
+
+
+//TODO: nix this?
+
+/*footer.home-footer {
   font-size: $font-size-sm;
 
   .title {
@@ -6,7 +38,7 @@ footer.home-footer {
   }
 
   .contact-info {
-    background: $gray-darker;
+    background: $gray-dark;
     color: $white;
     padding-top: $padding-sm;
     padding-bottom: $padding-md;
@@ -44,7 +76,7 @@ footer.home-footer {
           background: $white;
 
           i {
-            color: $gray-darker;
+            color: $gray-dark;
           }
         }
 
@@ -95,7 +127,7 @@ footer.home-footer {
 
       input[type="submit"]:hover {
         background: $white;
-        color: $gray-darker;
+        color: $gray-dark;
       }
 
       input[type="submit"]:focus {
@@ -118,7 +150,7 @@ footer.home-footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        color: $gray-darker;
+        color: $gray-dark;
         font-size: $font-size-sm;
 
         > div span {
@@ -128,7 +160,7 @@ footer.home-footer {
     }
 
     a {
-      color: $gray-darker;
+      color: $gray-dark;
     }
   }
 }
@@ -137,4 +169,4 @@ footer.home-footer {
   .newsletter {
     margin-bottom: 20px;
   }
-}
+} */
