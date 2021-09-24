@@ -3,7 +3,6 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-// TODO: remove unused variables before launch
 //
 // Color system
 //
@@ -44,7 +43,7 @@ $danger:        $red-error;
 $light:         $gray-snow;
 $dark:          $gray-dark;
 
-$colors: () !default; //TODO: what does this do?
+$colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
@@ -56,7 +55,7 @@ $colors: map-merge(
   $colors
 );
 
-$theme-colors: () !default; //TODO: what does this do?
+$theme-colors: () !default; 
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
@@ -160,11 +159,13 @@ $link-hover-decoration:     underline !default;
 $paragraph-margin-bottom:   1rem !default;
 
 
+
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
+// scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -173,6 +174,7 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 ) !default;
+// scss-docs-end grid-breakpoints
 
 
 // Grid containers
@@ -607,8 +609,8 @@ $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-snow !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
-$dropdown-link-color:               $gray-dark !default;
-$dropdown-link-hover-color:         darken($gray-dark, 5%) !default;
+$dropdown-link-color:               $gray !default;
+$dropdown-link-hover-color:         darken($gray, 5%) !default;
 $dropdown-link-hover-bg:            $gray-snow !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
