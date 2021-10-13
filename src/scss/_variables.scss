@@ -183,8 +183,11 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   sm: 86.5%,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
   xxl: 1210px
-)!default;
+) !default;
 
 // Grid columns
 //
