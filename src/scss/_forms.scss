@@ -1,8 +1,3 @@
-.form-label{
-	text-transform: uppercase;
-	letter-spacing: .03em;
-}
-
 .form-control{
 	&::placeholder, &select:invalid {
 		font-style: italic;
@@ -17,6 +12,7 @@
 		}
 	}
 }
+
 select:invalid.form-control {
 	font-style: italic;
 	font-size: $font-size-base;
