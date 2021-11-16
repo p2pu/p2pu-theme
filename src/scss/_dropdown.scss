@@ -29,17 +29,13 @@
 	}
 }
 
-#account-info{
-	#loggedInDropdown.show{
-		color: $p2pu-orange;
-	}
+#nav-account {
 	.dropdown-menu {
 		@include media-breakpoint-down(md){
 			margin-top: -1rem !important;
 		}
 		border-radius: 0;
 		border: 1px solid $light;
-		background-color: $cream;
 		min-width: unset;
 		&.show{
 			li{
