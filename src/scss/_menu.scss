@@ -12,27 +12,17 @@ header.fixed-top{
     }
   }
   nav{
-    &#account-info{
-      .p2pu-btn{
-          border: 0 !important;
-          &:before{
-            content: none !important;
-          }
-          &:focus{
-            box-shadow: none !important;
-          }
-      }
-    }
-    &:not(#account-info){
-      .p2pu-btn{
-        @media (max-width: map-get($grid-breakpoints, "md")) {
-          border: 0 !important;
-          &:before{
-            content: none !important;
-          }
-          &:focus{
-            box-shadow: none !important;
-          }
+    .p2pu-btn{
+      @media (max-width: map-get($grid-breakpoints, "md")) {
+        border: 0 !important;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0.5rem;
+        &:before{
+          content: none !important;
+        }
+        &:focus{
+          box-shadow: none !important;
         }
       }
     }
@@ -153,36 +143,4 @@ header.fixed-top{
      }
    }
   }
-  
-  .login-dropdown {
-    border: none;
-    border-radius: 0;
-    padding: 25px;
-    width: 100vw;
-    background: white;
-    @include media-breakpoint-up(md) {
-      width: 315px;
-    }
-    #div_id_submit {
-      margin-top: 15px;
-    }
-  
-    .alert.alert-danger {
-      background-color: transparent;
-      border: none;
-      color: $red-error;
-      font-size: $font-size-sm;
-      padding: 0;
-      font-weight: $font-weight-semibold;
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        li {
-          padding: 0;
-          margin: 0;
-        }
-      }
-    }
-  } 
 }

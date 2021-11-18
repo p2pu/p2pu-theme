@@ -31,9 +31,6 @@
 
 #nav-account {
 	.dropdown-menu {
-		@include media-breakpoint-down(md){
-			margin-top: -1rem !important;
-		}
 		border-radius: 0;
 		border: 1px solid $light;
 		min-width: unset;
@@ -48,6 +45,17 @@
 					}
 				}
 			}
+		}
+		@include media-breakpoint-down(md){
+      position: inherit;
+      border: none;
+      box-shadow: none !important;
+      li > .dropdown-item {
+        border: none !important;
+      }
+      .p2pu-btn {
+        padding-left: 0px;
+      }
 		}
 	}
 }
