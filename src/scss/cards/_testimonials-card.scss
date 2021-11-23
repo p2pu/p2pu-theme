@@ -1,9 +1,10 @@
 @import 'bootstrap/scss/mixins/_breakpoints';
 
 .card-testimonial{
-	&:not(.basic){
-		border-top-width: 10px;
-	}
+  // TODO remove - not sure if this was ever used, seems to have been overridden before
+	//&:not(.basic){
+	//	border-top-width: 10px;
+	//}
 	.quote, .blockquote {
 		position: relative;
 		font-size: $font-size-base;
