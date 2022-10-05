@@ -53,7 +53,7 @@ form{
 		.input-group-text{
 			.material-icons{
 				font-weight: bold;
-				font-size: 2rem; // TODO: I break consistent heights for input fields! Muhahaha!
+				//font-size: 2rem; // TODO: I break consistent heights for input fields! Muhahaha!
 				padding-left: $input-padding-y;
 			}
 		}
@@ -64,10 +64,8 @@ form{
 }
 
 // topic badges? - what is this? Why is it part of forms?
-
 .badge{
 	padding: 5px 8px 6px 8px;
-	margin: 0 5px 10px 0;
 	&.topic{
 		background-color: $gray;
 		&-selected{
