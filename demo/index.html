@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>P2PU CSS Theme</title>
+</head>
+<body>
+  <header class="fixed-top bg-white shadow-sm border-bottom">
+    <div class="header-top container">
+      <div class="d-flex flex-wrap align-items-center">
+        <a class="order-1 d-flex align-items-center py-3 me-md-auto text-white text-decoration-none" href="/en/">
+          <img class="logo my-md-1 me-2" src="/assets/images/dev/logo.png" alt="P2PU logo">
+        </a>
+        <nav id="nav-account" class="text-end col-12 col-md pe-0 order-4 order-md-2 ms-auto navbar navbar-expand-md" data-api-origin="https://learningcircles.p2pu.org" >
+          <!-- this content is replaced by NavAccount react component -->
+          <div class="my-2 my-md-0 collapse navbar-collapse navbarNavDropdown justify-content-end">
+            <a href="/en/teams" class="d-flex my-1 my-md-0 me-md-2 me-lg-3 btn btn-sm secondary p2pu-btn blue">Start a Team</a>
+            <a href="https://learningcircles.p2pu.org/en/accounts/register/" class="d-flex my-1 my-md-0 me-md-2 me-lg-3 btn btn-sm secondary p2pu-btn orange">Create an Account</a>
+            <a href="https://learningcircles.p2pu.org/en/accounts/login/" class="btn btn-sm d-flex align-items-center secondary p2pu-btn gray mx-0">
+              <span class="material-icons material-icons-outlined me-1 d-md-none">account_circle</span>
+              Log In
+            </a>
+          </div>
+        </nav>
+
+        <nav class="order-3 navbar-expand-md ms-auto">
+          <button class="navbar-toggler hamburger mx-0 align-items-center" type="button" data-bs-toggle="collapse" data-bs-target=".navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>
+        </nav>
+
+      </div>
+    </div>
+    <div class="header-bottom px-3 py-md-1 bg-cream-dark">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <nav class="main-nav col-12 col-md-auto py-0 ms-lg-auto justify-content-center text-sm navbar navbar-expand-md px-0">
+          <div class="collapse navbar-nav navbar-collapse navbarNavDropdown align-items-stretch align-items-md-center pt-3 pb-5 py-md-0">
+
+            <div class="dropdown nav-item">
+              <a href="/en/learning-circles/" class="nav-link d-flex align-items-center link-dark text-decoration-none dropdown-toggle "  aria-expanded="false"  >Explore Learning Circles</a>
+            </div>
+
+            <div class="dropdown nav-item">
+              <a href="https://docs.p2pu.org/" class="nav-link d-flex align-items-center link-dark text-decoration-none dropdown-toggle "  aria-expanded="false"  >Knowledge Base</a>
+            </div>
+
+            <div class="dropdown nav-item">
+              <a href="" class="nav-link d-flex align-items-center link-dark text-decoration-none dropdown-toggle "  data-bs-toggle="dropdown"  aria-expanded="false"  >Community<span class="material-icons">expand_more</span> </a>
+              <ul class="dropdown-menu shadow py-md-0" aria-labelledby="dropdownNavLink" style="">      
+                <li><a class="dropdown-item " href="/en/learning-resources/" >Learning Resources</a></li>
+                <li><a class="dropdown-item " href="/en/topics/" >Topic Guides</a></li>
+                <li><a class="dropdown-item " href="https://community.p2pu.org/" >Forum</a></li>
+                <li><a class="dropdown-item " href="/en/events/" >Events</a></li>
+              </ul>    
+            </div>
+
+            <div class="dropdown nav-item">
+              <a href="" class="nav-link d-flex align-items-center link-dark text-decoration-none dropdown-toggle "  data-bs-toggle="dropdown"  aria-expanded="false"  >Teams<span class="material-icons">expand_more</span> </a>
+              <ul class="dropdown-menu shadow py-md-0" aria-labelledby="dropdownNavLink" style="">      
+                <li><a class="dropdown-item " href="/en/teams/" >Start a Team</a></li>
+                <li><a class="dropdown-item " href="https://docs.p2pu.org/teams/about-teams" >Teams Documentation</a></li>
+                <li><a class="dropdown-item " href="/en/teams/#current-teams" >Current Teams</a></li>
+              </ul>    
+            </div>
+
+            <div class="dropdown nav-item">
+              <a href="" class="nav-link d-flex align-items-center link-dark text-decoration-none dropdown-toggle "  data-bs-toggle="dropdown"  aria-expanded="false"  >About<span class="material-icons">expand_more</span> </a>
+              <ul class="dropdown-menu shadow py-md-0" aria-labelledby="dropdownNavLink" style="">      
+                <li><a class="dropdown-item " href="/en/about/" >About</a></li>
+                <li><a class="dropdown-item " href="/en/services/" >Services</a></li>
+                <li><a class="dropdown-item " href="/en/jobs/" >Jobs</a></li>
+                <li><a class="dropdown-item " href="https://info.p2pu.org/" >Blog</a></li>
+                <li><a class="dropdown-item " href="/en/donate/" >Donate</a></li>
+              </ul>    
+            </div>
+
+            <div class="dropdown nav-item">
+              <a href="/en/help/" class="nav-link d-flex align-items-center link-dark text-decoration-none dropdown-toggle "  aria-expanded="false"  >Help</a>
+            </div>
+          </div>       
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+
+
+    <div>
+      <div class="row justify-content-around align-items-start">
+        <div class="primary col-10">
+          <div class="container">
+
+            <section id="foundation mb-5">
+              <h1>Foundation</h1>
+
+
+              <span class="badge topic">Business</span>
+              <span class="badge topic-selected">
+                <span class="material-icons dismiss">close</span>
+                Animal Husbandry
+              </span>
+
+              <div id="topic-card">
+                <h4>Generic Cards</h4>
+                <div class="row grid">
+                  <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card generic cover-link">
+                      <a href="http://google.com" target="_blank"></a>
+                      <div class="card-image">
+                        <img src="{{ site.baseurl }}/assets/images/p2pu-ogimg-default.jpg" alt="P2PU Monthly Facilitator Call" class="card-img-top">
+                      </div>
+                      <div class="card-header">
+                        <h4 class="card-title">google</h4>
+                        <span>Learn how to paint for free online</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% include styleguide-elements/generic-card.html %}
+              </div><!--/#colors-->
+
+              <div id="colors">
+                {% include styleguide-elements/colors.html %}
+              </div><!--/#colors-->
+
+              <div id="fonts">
+                {% include styleguide-elements/fonts.html %}
+              </div><!--/#fonts-->
+
+            </section><!--/#foundation-->
+
+
+            <section id="base-styles mb-5">
+              <h2 class="border-bottom border-2 mb-5">Base Styles</h2>
+
+              <div id="buttons">
+                {% include styleguide-elements/buttons.html %}
+              </div><!--/#buttons-->
+
+              <div id="typography">
+                {% include styleguide-elements/typography.html %}
+              </div><!--/#typography-->
+
+              <div id="form-controls">
+                {% include styleguide-elements/forms.html %}
+              </div><!-- /#form-controls -->
+
+            </section><!-- /#base-styles -->
+
+
+            <section id="layout-elements mb-5">
+              <h2 class="border-bottom border-2 mb-5">Layout Elements</h2>
+
+              <div id="cards">
+                {% include styleguide-elements/cards.html %}
+              </div><!--/#cards-->
+
+              <div id="dot-quad">
+                {% include styleguide-elements/dot-quad.html %}
+              </div><!--/#dot-quad-->
+
+            </section><!--/#layout-elements-->
+
+
+          </div><!--/.container-->
+        </div><!--/.primary-->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- SIDEBAR -->
+        <div class="sidebar secondary order-first sticky-top flex-shrink-0 p-3 bg-white col-2">
+          <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-5 fw-semibold">Collapsible</span>
+          </a>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <span data-bs-toggle="collapse" data-bs-target="#foundation-collapse" aria-expanded="true">
+                <strong>Foundation</strong>
+              </span>
+              <div class="collapse show" id="foundation-collapse" style="">
+                <ul class="btn-toggle-nav fw-normal pb-1 small">
+                  <li><a href="#colors" class="link-dark rounded">Colors</a>
+                    <ul>
+                      <li><a href="#brand-colors">Brand Colors</a></li>
+                      <li><a href="#brand-colors">Neutral Colors</a></li>
+                      <li><a href="#brand-colors">Alert Colors</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#fonts" class="link-dark rounded">Fonts</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <span data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false">
+                <strong>Base Styles</strong>
+              </span>
+              <div class="collapse" id="base-collapse">
+                <ul class="btn-toggle-nav fw-normal pb-1 small">
+                  <li><a href="#buttons" class="link-dark rounded">Buttons</a></li>
+                  <li><a href="#typography" class="link-dark rounded">Typography</a>
+                    <ul>
+                      <li><a href="#headings">Headings</a></li>
+                      <li><a href="#body-text">Body Text</a></li>
+                      <li><a href="#lead">Lead</a></li>
+                      <li><a href="#inline-elements">Inline Text Elements</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer id="footer" class="bg-gray text-cream">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-lg-8 col-xl-7 col-xxl-6 text-sm">
+          <div class="row">
+            <div class="col-12 col-md-6 order-1">
+              <ul class="nav flex-column">
+                <li class="nav-item"><a href="/en/learning-circles/">Join a Learning Circle</a></li>
+                <li class="nav-item"><a href="https://learningcircles.p2pu.org/en/studygroup/create/">Facilitate a Learning Circle</a></li>
+                <li class="nav-item"><a href="/en/teams/">Start a Team</a></li>
+              </ul>
+              <hr class="d-md-none" />
+            </div>
+
+            <div class="col-12 col-md-6 mt-md-4 order-2 order-md-3">
+              <ul class="nav flex-column">
+                <li class="nav-item"><a href="https://docs.p2pu.org">Knowledge Base</a></li>
+                <li class="nav-item"><a href="/en/learning-resources/">Learning Resources</a></li>
+                <li class="nav-item"><a href="https://community.p2pu.org">Community Forum</a></li>
+                <li class="nav-item"><a href="https://www.p2pu.org/en/events/">Events</a></li>
+              </ul>
+              <hr class="d-md-none" />
+            </div>
+
+            <div class="col-12 col-md-6 order-3 order-md-2">
+              <ul class="nav flex-column">
+                <li class="nav-item"><a href="/en/about/">About P2PU</a></li>
+                <li class="nav-item"><a href="https://info.p2pu.org">Blog</a></li>
+                <li class="nav-item"><a href="/en/services/">Services</a></li>
+                <li class="nav-item"><a href="/en/jobs/">Jobs</a></li>
+                <li class="nav-item"><a href="/en/help/">Help</a></li>
+              </ul>
+              <hr class="d-md-none" />
+            </div>
+
+            <div class="col-12 col-md-6 mt-md-4 order-4">
+              <ul class="nav flex-column">
+                <li class="nav-item"><a href="https://docs.p2pu.org/tools-and-resources/marketing-materials/p2pu.org-image-credits">Site Image Credits</a></li>
+                <li class="nav-item"><a href="/en/terms/">Terms of Service</a></li>
+                <li class="nav-item"><a href="/en/privacy/">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-xl-5 offset-xxl-1 d-md-flex order-first order-md-0">
+          <div class="col-12 order-first order-md-0 row g-0">
+            <div class="donate col-12 d-flex mb-5 mt-5 mt-lg-2">
+              <div class="flex-fill align-items-center d-flex">
+                <span class="col-12 bg-white"></span>
+              </div>
+              <a href="/en/donate" class="col btn btn-lg p2pu-btn orange mx-2">Donate</a>
+              <div class="flex-fill align-items-center d-flex">
+                <span class="col-12 bg-white"></span>
+              </div>
+            </div>
+            <div class="col-12 mb-5">
+              <h3 class="serif">Newsletter</h3>
+              <div class="d-flex">
+                <form action="https://p2pu.us2.list-manage.com/subscribe/post?u=f080ec78070523d59ef613eda&amp;id=dfc5a38968" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll" class="w-100 d-flex flex-column flex-sm-row flex-lg-column flex-xl-row align-items-end align-items-sm-stretch align-items-lg-end align-items-xl-stretch">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f080ec78070523d59ef613eda_dfc5a38968" tabindex="-1" value=""></div>
+                    <input type="email" value="" name="EMAIL" class="email form-control mb-2 mb-sm-0 mb-lg-2 mb-xl-0 me-sm-2 me-lg-0 me-xl-2" id="mce-EMAIL" placeholder="Your email address" required>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="cream btn btn-sm secondary p2pu-btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex w-100 order-first order-md-0 col-12 justify-content-between justify-content-sm-evenly justify-content-lg-between align-items-end">
+
+              <div class="social-link">
+                <a href="https://medium.com/p2pu" title="Medium">
+                  <i class="fab fa-medium-m" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social-link">
+                <a href="https://www.youtube.com/channel/UCJH3nTAgEAGljjTB5B8PjFw" title="YouTube">
+                  <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social-link">
+                <a href="https://www.flickr.com/groups/p2pu/" title="Flickr">
+                  <i class="fab fa-flickr" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social-link">
+                <a href="https://www.instagram.com/p2puniversity/" title="Instagram">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social-link">
+                <a href="https://twitter.com/P2PU" title="Twitter">
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social-link">
+                <a href="https://www.facebook.com/P2PUniversity" title="Facebook">
+                  <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social-link">
+                <a href="mailto:thepeople@p2pu.org" title="Email">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc bg-dark">
+      <div class="container">
+        <div class="col-12">
+          <span class="text-xxsm text-light">
+            Unless otherwise noted, all the materials on this site are licensed under CC BY-SA 4.0. Peer 2 Peer University is a U.S. 501(c)3 registered in California under Federal EIN 27-5006096.
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/base.js"></script>
+  <script src="https://kit.fontawesome.com/39799c00f5.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
