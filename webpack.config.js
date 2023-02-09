@@ -9,42 +9,44 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: '[name][ext][query]',
   },
   devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader,
-        }, {
-          loader: 'css-loader',
-          options: { sourceMap: true }
-        }, {
-          loader: 'postcss-loader',
-          options: {
-            plugins: function () {
-              return [
-                require('precss'),
-                require('autoprefixer')
-              ];
-            },
+        use: [
+          { 
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            //options: { sourceMap: true }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: () => [
+                  require('autoprefixer')
+                ]
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: true }
           }
-        }, {
-          loader: 'sass-loader',
-          options: { sourceMap: true }
-        }]
+        ]
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/'
-          }
-        }]
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        }
       }
     ]
   },
@@ -52,10 +54,7 @@ module.exports = {
     jquery: 'jQuery'
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
+    new MiniCssExtractPlugin(),
   ],
   resolve: {
     modules: [
