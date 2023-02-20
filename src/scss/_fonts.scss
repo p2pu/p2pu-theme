@@ -1,19 +1,19 @@
 // @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-$font-path: "../fonts";
+$font-path: "";
 
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("#{$font-path}/Merriweather-Bold.woff2") format('woff2');
+  src: url("../fonts/Merriweather-Bold.woff2") format('woff2');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  src: local("Open Sans"), url("#{$font-path}/OpenSans-Regular-webfont.woff") format('woff');
+  src: local("Open Sans"), url("../fonts/OpenSans-Regular-webfont.woff") format('woff');
   font-display: swap;
 }
 
@@ -21,7 +21,7 @@ $font-path: "../fonts";
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local("Open Sans Semibold"), url("#{$font-path}/OpenSans-Semibold-webfont.woff") format('woff');
+  src: local("Open Sans Semibold"), url("../fonts/OpenSans-Semibold-webfont.woff") format('woff');
   font-display: swap;
 }
 
@@ -29,7 +29,7 @@ $font-path: "../fonts";
   font-family: 'Open Sans';
   font-style: bold;
   font-weight: 700;
-  src: local("Open Sans Bold"), url("#{$font-path}/OpenSans-Bold-webfont.woff") format('woff');
+  src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold-webfont.woff") format('woff');
   font-display: swap;
 }
 
