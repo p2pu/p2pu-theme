@@ -1,5 +1,16 @@
 @import 'bootstrap/scss/mixins/_breakpoints';
 
+.learning-circle-card-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.learning-circle-card-link:hover {
+  text-decoration: none;
+  transform: translate(0px, -4px);
+  transition: all 0.3s ease;
+}
+
 .card.learning-circle {
   display: block;
 }
