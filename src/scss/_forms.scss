@@ -25,7 +25,7 @@ select:invalid.form-control {
 }
 
 
-form{
+form {
 	&.filter{
 		.input-group-md{
 			@include media-breakpoint-up(md) {
